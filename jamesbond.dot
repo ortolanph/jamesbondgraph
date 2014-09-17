@@ -1,0 +1,173 @@
+digraph jamesbond {
+
+	subgraph cluster_0 {
+		node [style="filled,rounded", color=red, shape=box, fontcolor=black];
+		CR1;
+		SC7;
+		DC3;
+		label="Apocryphal";
+	}
+
+	subgraph cluster_1 {
+		node [style="filled, rounded", color=brown, shape=box, fontcolor=white];
+		SC1 -> SC2 -> SC3 -> SC4 -> SC5;
+		SC6;
+		label="Sean Connery";
+	}
+
+	subgraph cluster_2 {
+		node [style="filled, rounded", color=black, shape=box, fontcolor=white];
+		GL1;
+		label="George Lazenby";
+	}
+
+	subgraph cluster_3 {
+		node [style="filled, rounded", color=cyan, shape=box, fontcolor=brown];
+		RM1 -> RM2 -> RM3 -> RM4 -> RM5 -> RM6 -> RM7;
+		label="Roger Moore";
+	}
+
+	subgraph cluster_4 {
+		node [style="filled, rounded", color=blue, shape=box, fontcolor=black];
+		TD1 -> TD2;
+		label="Timothy Dalton";
+	}
+
+	subgraph cluster_5 {
+		node [style="filled, rounded", color=green, shape=box, fontcolor=red];
+		PB1 -> PB2 -> PB3 -> PB4;
+		label="Pierce Brosnan";
+	}
+
+	subgraph cluster_6 {
+		node [style="filled, rounded", color=yellow, shape=box, fontcolor=blue];
+		DC1 -> DC2;
+		DC4;
+		label="Daniel Craig";
+	}
+
+JB -> CR1;
+JB -> SC1;
+SC5 -> GL1 -> SC6;
+SC6 -> SC7;
+SC6 -> RM1;
+RM7 -> TD1;
+TD2 -> PB1;
+PB4 -> DC1;
+DC2 -> DC3;
+DC2 -> DC4;
+
+/*
+All
+   Shape: Box
+*/
+
+JB [style=rounded, shape=box, fontcolor="black", fillcolor="black", label="Bond, James Bond"]
+
+/*
+Sean Connery
+   Letter: White
+   Fill: Brown
+   
+1 	Dr. No 	1962
+2 	From Russia with Love 	1963
+3 	Goldfinger, 1964
+4 	Thunderball, 1965
+5 	You Only Live Twice, 1967
+7 	Diamonds Are Forever, 1971
+*/
+
+SC1 [label="Dr. No, 1962"]
+SC2 [label="From Russia With Love, 1963"]
+SC3 [label="Goldfinger, 1964"]
+SC4 [label="Thunderball, 1965"]
+SC5 [label="You Only Live Twice, 1967"]
+SC6 [label="Diamonds Are Forever, 1971"]
+
+/*
+George Lazenby
+   Letter: Black
+   Fill: White
+
+6 	On Her Majesty's Secret Service, 1969
+*/
+
+GL1 [label="On Her Majesty's Secret Service, 1969"]
+
+/*
+Roger Moore
+   Letter: Brown
+   Fill: Cyan
+
+8 	Live and Let Die, 1973
+9 	The Man with the Golden Gun, 1974
+10 	The Spy Who Loved Me, 1977
+11 	Moonraker, 1979
+12 	For Your Eyes Only, 1981
+13 	Octopussy, 1983
+14 	A View to a Kill, 1985
+*/
+
+RM1 [label="Live and Let Die, 1973"]
+RM2 [label="The Man with the Golden Gun, 1974"]
+RM3 [label="The Spy Who Loved Me, 1977"]
+RM4 [label="Moonraker, 1979"]
+RM5 [label="For Your Eyes Only, 1981"]
+RM6 [label="Octopussy, 1983"]
+RM7 [label="A View to a Kill, 1985"]
+
+/*
+Timothy Dalton
+   Letter: White
+   Fill: Black
+
+15 	The Living Daylights, 1987
+16 	Licence to Kill, 1989
+*/
+
+TD1 [label="The Living Daylights, 1987"]
+TD2 [label="Licence to Kill, 1989"]
+
+/*
+Pierce Brosnan
+   Letter: Red
+   Fill: Green
+
+17 	GoldenEye, 1995
+18 	Tomorrow Never Dies, 1997
+19 	The World Is Not Enough, 1999
+20 	Die Another Day, 2002
+*/
+
+PB1 [label="GoldenEye, 1995"]
+PB2 [label="Tomorrow Never Dies, 1997"]
+PB3 [label="The World Is Not Enough, 1999"]
+PB4 [label="Die Another Day, 2002"]
+
+/*
+Daniel Craig
+   Letter: Blue
+   Fill: Yellow
+
+21 	Casino Royale, 2006
+22 	Quantum of Solace, 2008
+23 	Skyfall, 2012
+*/
+
+DC1 [label="Casino Royale, 2006"]
+DC2 [label="Quantum of Solace, 2008"]
+DC4 [label="Skyfall, 2012"]
+
+/*
+Apocryphal
+
+   Casino Royale, 1967
+   Never Say Never Again, 1983
+   Happy and Glorious, 2012
+*/
+
+CR1 [label="Casino Royale, 1967"]
+SC7 [label="Never Say Never Again, 1983"]
+DC3 [label="Happy and Glorious, 2012"]
+
+}
