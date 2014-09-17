@@ -1,0 +1,8 @@
+digraph james_bond_saga {
+
+JB;
+
+/* Characters */
+JB      [label="James Bond"]
+
+}
