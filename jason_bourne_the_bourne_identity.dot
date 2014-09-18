@@ -23,17 +23,23 @@ CAS -> FO;
 
 /* Locations Relationships */
 MAR -> LO;
-ZUR -> LO;
+GEM -> ZUR -> LO;
 PAR -> LO;
 MYK -> LO;
 
-/* Organizations Relationships */
-TRE -> OR;
+/* Project Relationships */
+TRE -> PJ;
 CAS -> TRE;
 MAN -> TRE;
 PRO -> TRE;
-BLA -> OR;
+BLA -> PJ;
 CON -> TRE;
+ABB -> BLA;
+PIC -> TRE;
+NIK -> TRE;
+NIK -> BLA;
+ZOR -> TRE;
+PIC -> TRE;
 
 /* Aliases Relationships */
 JMK -> AL;
@@ -60,14 +66,18 @@ MAR [label="Marseille's Sea"]
 ZUR [label="Zurich"]
 PAR [label="Paris"]
 MYK [label="Mykonos"]
+GEM [label="Gemeinschaft Bank"]
 
-/* Organizations */
+/* Projects */
 TRE [label="Treadstone"]
 BLA [label="Blackbriar"]
 
-/* Organizations Employees */
+/* Projects' Employees */
 CON [label="Conklin"]
-
+ABB [label="Abbot"]
+ZOR [label="Zorn"]
+NIK [label="Nicky"]
+PIC [label="Picot"]
 
 /* Aliases */
 JMK [label="John Michael Kane [FRA]"]
@@ -80,7 +90,7 @@ WOM [label="Kill Wombosi"]
 FR [label="Friends"]
 FO [label="Foes"]
 LO [label="Locations"]
-OR [label="Organizations"]
+PJ [label="Project"]
 AL [label="Aliases"]
 MI [label="Mission"]
 
