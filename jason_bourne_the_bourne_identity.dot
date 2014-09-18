@@ -1,0 +1,87 @@
+digraph jason_bourne_the_bourne_identity {
+
+/* Basic Relaationships */
+JB;
+JB -> FR;
+JB -> FO;
+JB -> LO;
+JB -> OR;
+JB -> AL;
+JB -> MI;
+
+/* Friends Relationships */
+MK -> FR;
+EAM -> MK;
+BLO -> MK;
+CLA -> MK;
+ALA -> MK;
+
+/* Foes Relationships */
+PRO -> FO;
+MAN -> FO;
+CAS -> FO;
+
+/* Locations Relationships */
+MAR -> LO;
+ZUR -> LO;
+PAR -> LO;
+MYK -> LO;
+
+/* Organizations Relationships */
+TRE -> OR;
+CAS -> TRE;
+MAN -> TRE;
+PRO -> TRE;
+BLA -> OR;
+CON -> TRE;
+
+/* Aliases Relationships */
+JMK -> AL;
+GIP -> AL;
+
+/* Mission Relationships */
+WOM -> MI;
+
+/* Firends */
+JB [label="Jason Bourne"]
+MK [label="Marie Kreutz"]
+EAM [label="Eamon"]
+BLO [label="Bloody, the Dog"]
+CLA [label="Claudia"]
+ALA [label="Alain"]
+
+/* Foes */
+PRO [label="Professor"]
+MAN [label="Manhein"]
+CAS [label="Castel"]
+
+/* Locations */
+MAR [label="Marseille's Sea"]
+ZUR [label="Zurich"]
+PAR [label="Paris"]
+MYK [label="Mykonos"]
+
+/* Organizations */
+TRE [label="Treadstone"]
+BLA [label="Blackbriar"]
+
+/* Organizations Employees */
+CON [label="Conklin"]
+
+
+/* Aliases */
+JMK [label="John Michael Kane [FRA]"]
+GIP [label="Gilberto Piento [BRA]"]
+
+/* Mission */
+WOM [label="Kill Wombosi"]
+
+/* Topics */
+FR [label="Friends"]
+FO [label="Foes"]
+LO [label="Locations"]
+OR [label="Organizations"]
+AL [label="Aliases"]
+MI [label="Mission"]
+
+}
