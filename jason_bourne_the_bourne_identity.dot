@@ -39,7 +39,6 @@ PIC -> TRE;
 NIK -> TRE;
 NIK -> BLA;
 ZOR -> TRE;
-PIC -> TRE;
 
 /* Aliases Relationships */
 JMK -> AL;
