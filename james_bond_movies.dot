@@ -42,7 +42,7 @@ digraph jamesbond {
 	subgraph cluster_6 {
 		node [style="filled, rounded", color=yellow, shape=box, fontcolor=blue];
 		DC1 -> DC2;
-		DC4;
+		DC4 -> DC5;
 		label="Daniel Craig";
 	}
 
@@ -157,6 +157,7 @@ Daniel Craig
 DC1 [label="Casino Royale, 2006"]
 DC2 [label="Quantum of Solace, 2008"]
 DC4 [label="Skyfall, 2012"]
+DC5 [label="SPECTRE, 2015"]
 
 /*
 Apocryphal
