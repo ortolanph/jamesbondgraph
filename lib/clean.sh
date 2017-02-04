@@ -23,7 +23,7 @@ function checkParameters() {
 
 function delete() {
     message "Cleaning $1 file format"
-    if [ -n "$(ls | grep .$1)" ] ; then 
+    if [ -n "$(ls src/ | grep .$1)" ] ; then 
         rm *.$1
     fi
 }

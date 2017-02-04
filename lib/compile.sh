@@ -23,7 +23,7 @@ function checkParameters() {
 
 function compile() {
     message "Compiling"
-    declare -a GRAPHS=($(ls | grep '.dot' ))
+    declare -a GRAPHS=($(ls src/ | grep '.dot' ))
 
     for GRAPH in "${GRAPHS[@]}"
     do
@@ -36,7 +36,7 @@ function compile() {
         fi
 
         message "Compiling $GRAPH to $FINAL_NAME"
-        dot $GRAPH -T$1 -o $FINAL_NAME
+        dot src/$GRAPH -T$1 -o target/$FINAL_NAME
         :
     done
 }
