@@ -1,6 +1,6 @@
 digraph jason_bourne_the_bourne_identity {
 
-/* Basic Relaationships */
+/* Basic Relationships */
 JB;
 JB -> FR;
 JB -> FO;

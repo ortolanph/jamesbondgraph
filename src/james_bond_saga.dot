@@ -3,9 +3,123 @@ James Bond Saga
 */
 digraph james_bond_saga {
 
+/* Our protagonist */
 JB;
 
-/* Characters */
-JB      [label="James Bond"]
+/* Topic relationships */
+JB -> FR;
+JB -> FO;
+JB -> VE;
+JB -> WO;
+JB -> OR;
+JB -> LO;
+JB -> WE;
+JB -> GD;
 
+/* Friends relationships */
+FR -> MOPE;
+FR -> QUAR;
+FR -> MMMM;
+FR -> FELE;
+FR -> STRG;
+FR -> PUFE;
+FR -> HORY;
+
+/* Foes relationships */
+FO -> DRNO;
+FO -> PROF;
+FO -> TBMI;
+FO -> MITA;
+
+/* Vehicles relationships */
+VE -> ASMA;
+VE -> DRAG;
+DRNO -> DRAG;
+
+/* Women relationships */
+WO -> MITA;
+WO -> HORY;
+WO -> SYTR;
+WO -> FRPH;
+
+/* Organizations relationships */
+OR -> MI_6;
+OR -> UNEX;
+OR -> CIA;
+OR -> SPCT;
+MI_6 -> UNEX -> MI_6;
+MI_6 -> MMMM;
+MI_6 -> MOPE;
+MI_6 -> STRG;
+CIA -> FELE;
+SPCT -> DRNO;
+SPCT -> TBMI;
+SPCT -> MITA;
+SPCT -> PROF;
+
+/* Locations relationships */
+LO -> KGJA;
+LO -> LDEN;
+LO -> CKIS;
+
+/* Weapons relationships */
+WE -> BERT;
+WE -> WPPK;
+
+/* Gadgets relationships */
+GD -> GGCT;
+
+/* Characters */
+JB [label="James Bond\nDr. No\n1968"]
+
+/* Friends */
+MOPE [label="Moneypenny"]
+QUAR [label="Quarrel"]
+MMMM [label="M"]
+FELE [label="Felix Leiter"]
+STRG [label="Strangways"]
+PUFE [label="Puss Feller"]
+HORY [label="Honey Ryder"]
+
+/* Vehicles */
+ASMA [label="Aston Martin"]
+DRAG [label="The Dragon"]
+
+/* Foes */
+DRNO [label="Dr. No"]
+PROF [label="Professor Dent"]
+TBMI [label="Three Blind Mice"]
+MITA [label="Miss Taro"]
+
+/* Women */
+SYTR [label="Sylvia Trench"]
+FRPH [label="Freelancer Photographer"]
+
+/* Organizations */
+MI_6 [label="MI-6"]
+UNEX [label="Universal Exports"]
+CIA [label="CIA"]
+SPCT [label="SPECTRE"]
+
+/* Locations */
+KGJA [label="Kingston, Jamaica"]
+LDEN [label="London, England"]
+CKIS [label="Crab Key Island"]
+
+/* Weapons */
+BERT [label="Beretta"]
+WPPK [label="Walter PPK"]
+
+/* Gadgets */
+GGCT [label="Geiger Gount"]
+
+/* Topics */
+FR [label="Friends"]
+FO [label="Foes"]
+VE [label="Vehicles"]
+WO [label="Women"]
+OR [label="Organizations"]
+LO [label="Locations"]
+WE [label="Weapons"]
+GD [label="Gadgets"]
 }
