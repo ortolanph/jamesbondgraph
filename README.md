@@ -13,18 +13,15 @@ Graphs made with graphviz to tell the relationships of the James Bond saga.
 | ```make compile_png``` | Create ```png``` files from ```dot``` files |
 | ```make compile_svg``` | Create ```svg``` files from ```dot``` files |
 
-## James Bond Movies
+## The Saga
 
-[James Bond Movies](target/james_bond_movies.svg)
+1. [**James Bond Movies**](target/james_bond_movies.svg)
+2. [**The James Bond Saga**](target/james_bond_saga.svg)
 
-## The James Bond Saga
+## The Movies 
 
-[The James Bond Saga](target/james_bond_saga.svg)
-
-## 1962 Dr. No
-
-[1962 Dr. No](target/1962-drno.svg)
+1. [**Dr. No(1962)**](target/1962-drno.svg)
 
 ## PLUS: Jason Bourne Trilogy
 
-[**The Bourn Identity**](target/jason_bourne_the_bourne_identity.svg)
+1. [**The Bourn Identity**](target/jason_bourne_the_bourne_identity.svg)
