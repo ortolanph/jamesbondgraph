@@ -27,6 +27,4 @@ Graphs made with graphviz to tell the relationships of the James Bond saga.
 
 ## PLUS: Jason Bourne Trilogy
 
-**The Bourn Identity**
-
-[1962 Dr. No](target/jason_bourne_the_bourne_identity.svg)
+[**The Bourn Identity**](target/jason_bourne_the_bourne_identity.svg)
