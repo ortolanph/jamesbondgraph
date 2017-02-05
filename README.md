@@ -20,7 +20,7 @@ Graphs made with graphviz to tell the relationships of the James Bond saga.
 
 ## The Movies 
 
-1. [**Dr. No(1962)**](target/1962-drno.svg)
+1. [**Dr. No (1962)**](target/1962-drno.svg)
 
 ## PLUS: Jason Bourne Trilogy
 
